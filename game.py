@@ -9,7 +9,7 @@ if user_choice in ["rock","paper","scissors"]:
     print("You chose:")
     print(user_choice)
 else:
-    print("Your choice is invalid. Please Try Again!")
+    print("Your choice is invalid. Capital case matters! Please Try Again!")
     exit()
 
 
