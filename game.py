@@ -27,19 +27,19 @@ if user_choice == "rock" and comp_choice == "rock":
 elif user_choice == "rock" and comp_choice == "paper":
     print("Oh the computer won. Maybe nexttime.")
 elif user_choice == "rock" and comp_choice == "scissors": 
-    print("Congratulation! You won!")
+    print("Congratulations! You won!")
 elif user_choice == "paper" and comp_choice == "paper":
     print("You drew")
 elif user_choice == "paper" and comp_choice == "scissors":
     print("Oh the computer won. Maybe nexttime.")
 elif user_choice == "paper" and comp_choice == "rock": 
-    print("Congratulation! You won!")
+    print("Congratulations! You won!")
 elif user_choice == "scissors" and comp_choice == "scissors":
     print("You drew")
 elif user_choice == "scissors" and comp_choice == "rock":
     print("Oh the computer won. Maybe nexttime.")
 else: 
-    print("Congratulation! You won!")
+    print("Congratulations! You won!")
 
-print("Thanks for playing! Please play again!")
+print(f"Thanks for playing {USER_NAME}! Please play again!")
 
