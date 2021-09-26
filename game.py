@@ -1,13 +1,18 @@
 # game.py
 import random
+import os
+from dotenv import load_dotenv
+
+load_dotenv() # invokes / uses the function we got from the third-party package. this one happens to read env vars from the ".env" file. see the "python-dotenv" package docs for more info
+USER_NAME = os.getenv("USER_NAME", default="Player One")
 
 print("Rock, Paper, Scissors, Shoot!")
+print(f"Welcome to my game player {USER_NAME}!")
 
 user_choice = input("Choose 'rock', 'paper', or 'scissors':  ")
 
 if user_choice in ["rock","paper","scissors"]: 
-    print("You chose:")
-    print(user_choice)
+    print("You chose:", user_choice)
 else:
     print("Your choice is invalid. Capital case matters! Please Try Again!")
     exit()
